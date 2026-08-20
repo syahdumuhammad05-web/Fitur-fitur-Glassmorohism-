@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Penjelasan Fitur - Glassmorphism UI</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-indigo-900 via-purple-900 to-slate-900 min-h-screen text-slate-100 font-sans antialiased">
+
+  <!-- Section Hero Fitur Glassmorphism -->
+  <section class="max-w-6xl mx-auto px-6 py-16 md:py-24">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      
+      <!-- Kolom Teks / Deskripsi Fitur -->
+      <div>
+        <span class="text-sm font-semibold text-cyan-300 bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-full border border-white/20 uppercase tracking-wider">
+          Desain Antarmuka Modern
+        </span>
+        <h1 class="text-3xl md:text-5xl font-extrabold text-white mt-4 leading-tight">
+          Efek Fitur Glassmorphism
+        </h1>
+        <p class="text-lg text-slate-300 mt-4 leading-relaxed">
+          Tingkatkan estetika aplikasi Anda dengan tampilan semi-transparan bergaya kaca buram. Memberikan kesan futuristik, modern, dan menambah kedalaman visual pada UI.
+        </p>
+
+        <!-- Point Manfaat (List) -->
+        <ul class="mt-6 space-y-3">
+          <li class="flex items-start">
+            <svg class="w-6 h-6 text-cyan-400 mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span class="text-slate-200"><strong>Transparansi Berlapis:</strong> Memperkuat hirarki visual dengan efek kaca tembus pandang.</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="w-6 h-6 text-cyan-400 mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span class="text-slate-200"><strong>Backdrop Blur:</strong> Memburamkan latar belakang agar teks dan elemen di depan tetap fokus.</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="w-6 h-6 text-cyan-400 mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span class="text-slate-200"><strong>Border Halus & Light Reflex:</strong> Pinggiran berpipis cerah yang meniru kilauan cahaya pada kaca.</span>
+          </li>
+        </ul>
+
+        <!-- Tombol Aksi (CTA) -->
+        <div class="mt-8 flex gap-4">
+          <a href="#" class="px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold rounded-xl shadow-lg transition-all">
+            Lihat Demo
+          </a>
+          <a href="#" class="px-6 py-3 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold rounded-xl backdrop-blur-md transition-all">
+            Pelajari CSS
+          </a>
+        </div>
+      </div>
+
+      <!-- Kolom Visual / Kartu Glassmorphism -->
+      <div class="relative">
+        <!-- Bulatan Gradien Dekoratif untuk efek berpendar di belakang kaca -->
+        <div class="absolute -top-10 -left-10 w-48 h-48 bg-purple-500 rounded-full mix-blend-multiply filter blur-2xl opacity-70"></div>
+        <div class="absolute -bottom-10 -right-10 w-48 h-48 bg-cyan-500 rounded-full mix-blend-multiply filter blur-2xl opacity-70"></div>
+
+        <!-- Kartu UI Utama Ber-efek Glassmorphism -->
+        <div class="relative bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-8 shadow-2xl">
+          <div class="flex items-center justify-between mb-6">
+            <div class="h-3 w-12 bg-white/30 rounded-full"></div>
+            <div class="w-8 h-8 rounded-full bg-cyan-400/20 border border-cyan-300/40 flex items-center justify-center text-xs font-bold text-cyan-300">UI</div>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">Komponen Glass Card</h3>
+          <p class="text-slate-300 text-sm mb-6">
+            Contoh penerapan nyata efek glassmorphism menggunakan kombinasi `backdrop-filter`, transparansi warna latar, dan border tipis.
+          </p>
+          <div class="p-4 bg-white/5 rounded-xl border border-white/10 flex items-center gap-4">
+            <div class="w-10 h-10 rounded-lg bg-indigo-500/30 flex items-center justify-center text-cyan-300 font-bold">✨</div>
+            <div>
+              <p class="text-xs text-slate-400">Status Efek</p>
+              <p class="text-sm font-semibold text-white">Aktif & Responsif</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section Cara Kerja / Langkah Penerapan -->
+  <section class="py-16 border-t border-white/10 bg-slate-900/50 backdrop-blur-lg">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-white">3 Kunci Membuat Glassmorphism</h2>
+        <p class="text-slate-400 mt-2">Prinsip utama CSS yang dibutuhkan untuk menghasilkan tampilan kaca transparan.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Langkah 1 -->
+        <div class="p-6 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10">
+          <div class="w-10 h-10 bg-cyan-500/20 text-cyan-300 font-bold rounded-xl border border-cyan-400/30 flex items-center justify-center mb-4">1</div>
+          <h3 class="text-xl font-semibold text-white mb-2">Background Transparan</h3>
+          <p class="text-slate-300 text-sm">Gunakan warna latar belakang dengan opacity/alpha (seperti `rgba(255, 255, 255, 0.1)` atau `bg-white/10`).</p>
+        </div>
+
+        <!-- Langkah 2 -->
+        <div class="p-6 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10">
+          <div class="w-10 h-10 bg-cyan-500/20 text-cyan-300 font-bold rounded-xl border border-cyan-400/30 flex items-center justify-center mb-4">2</div>
+          <h3 class="text-xl font-semibold text-white mb-2">Backdrop Filter Blur</h3>
+          <p class="text-slate-300 text-sm">Gunakan properti `backdrop-filter: blur(...)` untuk memburamkan objek yang berada tepat di belakang elemen.</p>
+        </div>
+
+        <!-- Langkah 3 -->
+        <div class="p-6 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10">
+          <div class="w-10 h-10 bg-cyan-500/20 text-cyan-300 font-bold rounded-xl border border-cyan-400/30 flex items-center justify-center mb-4">3</div>
+          <h3 class="text-xl font-semibold text-white mb-2">Border Tipis Transparan</h3>
+          <p class="text-slate-300 text-sm">Tambahkan garis tepi tipis semi-transparan untuk memberi kesan kilauan sudut kaca (*light edge*).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
